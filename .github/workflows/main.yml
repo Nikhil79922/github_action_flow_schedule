@@ -1,0 +1,13 @@
+name: Schedular for gitHub action flow
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+
+jobs: 
+  run-script:
+      runs-on: ubuntu-latest
+
+      steps: 
+        - name: Print with Scheduler 
+          run: echo "Hello nikhil"

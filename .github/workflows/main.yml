@@ -2,7 +2,8 @@ name: Schedular for gitHub action flow
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: "*/5 * * * *"
+  workflow_dispatch:  
 
 jobs: 
   run-script:
@@ -10,4 +11,4 @@ jobs:
 
       steps: 
         - name: Print with Scheduler 
-          run: echo "Hello nikhil"
+          run: date
